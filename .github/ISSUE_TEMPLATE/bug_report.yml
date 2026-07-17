@@ -1,0 +1,41 @@
+name: Bug report
+description: 报告一个可以复现的问题（请勿上传患者数据）
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "谢谢反馈。请先确认内容已经脱敏；患者切片不是彩蛋，不要上传。"
+  - type: input
+    id: version
+    attributes:
+      label: PathoScope version
+      placeholder: v0.4.1 build 8
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: macOS and Mac model
+      placeholder: macOS 15.5, MacBook Pro M3
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: Slide format
+      options: [MRXS, SVS, NDPI, SCN, TIFF, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
