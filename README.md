@@ -6,8 +6,6 @@ PathoScope 是一款使用 SwiftUI + Metal 编写的 macOS 原生数字病理 / 
 
 当前公开版本：**v0.4.1 Preview（build 8）**。
 
-![PathoScope icon](Packaging/PathoScopeIcon_1024.png)
-
 ## 它现在会什么
 
 - 原生读取 MRXS，并自动关联同名伴随目录。
@@ -22,13 +20,29 @@ PathoScope 是一款使用 SwiftUI + Metal 编写的 macOS 原生数字病理 / 
 
 ## 看图说话
 
-界面预览（已移除切片名称等识别信息）：
+### ROI 定量分析
 
-![PathoScope macOS interface](docs/screenshots/pathoscope-ui-preview.png)
+A/B ROI 可分别选择切片、ROI 和单个原始通道，并报告背景校正 mean、raw mean、median、background 与 integrated intensity：
 
-ROI 发表截图示例（彩色通道标签 + 比例尺；不显示样本名）：
+![PathoScope ROI quantitative analysis](docs/screenshots/roi-quantitative-analysis.png)
 
-![PathoScope ROI publication export](docs/screenshots/roi-export-preview.png)
+### 发表级别示意图
+
+1600 × 1600 导出示例，包含彩色通道标签和比例尺，不显示样本名：
+
+![PathoScope publication export preview](docs/screenshots/publication-export-preview.png)
+
+### 打开界面
+
+切片打开后的主界面与逐通道显示控制；切片列表中的识别信息已打码：
+
+![PathoScope open interface](docs/screenshots/pathoscope-open-interface.png)
+
+### 上传切片
+
+可以拖入 MRXS、SVS 等切片，也可以点击“选择文件”；MRXS 会自动关联同名伴随目录：
+
+![PathoScope slide upload screen](docs/screenshots/slide-upload-screen.png)
 
 以上图片只用于展示软件界面与导出样式，不作为生物学结论或定量基准。毕竟 README 可以负责貌美，结论还是要让实验负责。
 
