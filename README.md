@@ -20,6 +20,18 @@ PathoScope 是一款使用 SwiftUI + Metal 编写的 macOS 原生数字病理 / 
 - A/B 单通道 ROI 比较：raw mean、median、integrated intensity、background mean 和 background-corrected mean，可导出 CSV。
 - 左右面板可独立开关；需要安静看片时，UI 可以识趣地退场。
 
+## 看图说话
+
+界面预览（已移除切片名称等识别信息）：
+
+![PathoScope macOS interface](docs/screenshots/pathoscope-ui-preview.png)
+
+ROI 发表截图示例（彩色通道标签 + 比例尺；不显示样本名）：
+
+![PathoScope ROI publication export](docs/screenshots/roi-export-preview.png)
+
+以上图片只用于展示软件界面与导出样式，不作为生物学结论或定量基准。毕竟 README 可以负责貌美，结论还是要让实验负责。
+
 ## 下载与安装
 
 在仓库右侧 **Releases** 下载 `PathoScope-v0.4.1-build8-AppleSilicon.dmg`，打开后把 `PathoScope.app` 拖到“应用程序”。
